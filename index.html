@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mukeem | Student Dashboard</title>
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand">Mukeem Dashboard</div>
+      <button class="nav-toggle" id="navToggle" aria-label="Open navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" id="siteNav">
+        <a href="#home">Overview</a>
+        <a href="#about">Profile</a>
+        <a href="#academics">Academics</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-content">
+          <p class="eyebrow">Student Profile</p>
+          <h1>Mukeem</h1>
+          <p class="hero-text">Professional first-year B.Tech CSE AIML dashboard with academic progress, skills, and achievement highlights.</p>
+          <div class="hero-actions">
+            <a href="#academics" class="button primary">See Academics</a>
+            <a href="#contact" class="button secondary">Contact Me</a>
+          </div>
+        </div>
+        <div class="hero-panel">
+          <div class="profile-card">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80" alt="Mukeem profile" />
+            <div class="profile-info">
+              <h2>B.Tech CSE AIML</h2>
+              <p>1st Year • SGPA 8.2</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="section-header">
+          <span>About</span>
+          <h2>Focused on academics, AI, and professional growth.</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>I am Mukeem, a dedicated first-year B.Tech CSE student specializing in Artificial Intelligence and Machine Learning. I am building a strong foundation in programming, data analysis, and practical AI applications.</p>
+            <p>My goal is to combine academic excellence with real-world project experience, creating thoughtful solutions that are both functional and professionally presented.</p>
+          </div>
+          <div class="about-stats">
+            <div class="stat-card">
+              <strong>8.2</strong>
+              <span>Current SGPA</span>
+            </div>
+            <div class="stat-card">
+              <strong>1st Year</strong>
+              <span>Academic Level</span>
+            </div>
+            <div class="stat-card">
+              <strong>AIML</strong>
+              <span>Specialization</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="academics">
+        <div class="section-header">
+          <span>Academics</span>
+          <h2>Core courses and academic strengths.</h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-pill">B.Tech CSE AIML</div>
+          <div class="skill-pill">SGPA 8.2</div>
+          <div class="skill-pill">1st Year</div>
+          <div class="skill-pill">Python</div>
+          <div class="skill-pill">Data Structures</div>
+          <div class="skill-pill">Machine Learning</div>
+          <div class="skill-pill">Algorithms</div>
+          <div class="skill-pill">Web Development</div>
+        </div>
+      </section>
+
+      <section class="section" id="skills">
+        <div class="section-header">
+          <span>Skills</span>
+          <h2>Technical tools and capabilities.</h2>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card">
+            <h3>Programming</h3>
+            <p>Strong fundamentals in Python, C++, and JavaScript for academic and hands-on project work.</p>
+          </article>
+          <article class="project-card">
+            <h3>AI / ML</h3>
+            <p>Developing understanding in machine learning models, data processing, and AI problem solving.</p>
+          </article>
+          <article class="project-card">
+            <h3>Web Design</h3>
+            <p>Building responsive, professional web experiences with modern HTML, CSS, and layout techniques.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="contact">
+        <div class="section-header">
+          <span>Contact</span>
+          <h2>Reach out for mentorship, internships, or collaboration.</h2>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h3>Contact Info</h3>
+            <p>I am open to learning opportunities, internship discussions, and collaboration on student projects.</p>
+            <ul>
+              <li><strong>Email:</strong> mukeem@example.com</li>
+              <li><strong>Phone:</strong> +91 90000 00000</li>
+              <li><strong>Location:</strong> India</li>
+            </ul>
+          </div>
+          <form class="contact-form" id="contactForm">
+            <label>
+              Name
+              <input type="text" id="name" placeholder="Your name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" id="email" placeholder="you@example.com" required />
+            </label>
+            <label>
+              Message
+              <textarea id="message" rows="5" placeholder="Tell me about your project" required></textarea>
+            </label>
+            <button type="submit" class="button primary">Send Message</button>
+            <p class="form-feedback" id="formFeedback"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 Mukeem. Professional student dashboard built with HTML, CSS, and JavaScript.</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
